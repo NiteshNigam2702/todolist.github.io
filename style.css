@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    cursor: default;
+}
+body{
+    background-image: linear-gradient(120deg, #659ff6, #7ef976);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+header,form{
+    min-height: 20vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+form input, form button{
+    padding: 10px;
+    font-size: 30px;
+    border: none;
+    background : white;
+}
+form button{
+    color: #65a1f3;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form button:hover{
+    background: #65a1f3;
+    color: white;
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: centre;
+}
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+.todo{
+    margin: 20px;
+    background: white;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s all ease;
+}
+.todo li{
+    flex: 1;
+}
+.trash-btn, .complete-btn{
+    background: #65a1f3;
+    color: white;
+    border: none;
+    padding: 18px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.complete-btn{
+    background: rgb(16, 204, 16);
+}
+.todo-item{
+    padding: 10px;
+}
+.fa-check, .fa-trash{
+    pointer-events: none;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    outline: none;
+    color: #65a1f3;
+    width: 200px;
+    cursor: pointer;
+    padding: 18px;
+
+}
+.select{
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+   
+}
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background: #65a1f3;
+    top: 0;
+    right: 0;
+    padding: 14px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.select:hover::after{
+    background-color: white;
+    color: #65a1f3;
+}
+.head{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.title{
+ width: 80%;
+}
+.Clock{
+    width: 20%;
+    position: absolute;
+    right: 0
+}
