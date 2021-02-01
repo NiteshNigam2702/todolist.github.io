@@ -7,12 +7,12 @@
     outline: none;
 }
 body{
-    background-color:#3775d1;
+    background: linear-gradient(120deg, #3775d1,rgb(34, 162, 194), #58d64f);
     background-size: 100%;
     background-repeat: repeat;
     color: white;
     font-family: 'Poppins', sans-serif;
-    min-height: 100vw;
+    height: 100vh;
 }
 header,form{
     min-height: 20vh;
